@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD1</title>
+    <style>
+        
+        label {
+            font-weight: bold;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            width: 33%;
+        }
+        th {
+            background-color: #F5F5F5;
+        }
+        td {
+            background-color: #E8E8E8;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 style="color:blue">LOGIN DULU</h1>
+    <form id="loginForm">
+            <label for="First Name">First Name:</label><br>
+            <input type="text" id="First Name" name="First Name" placeholder=""><br>
+            <label for="Last Name">Last Name:</label><br>
+            <input type="text" id="Last Name" name="Last Name" placeholder=""><br>
+
+            <input type="submit" id="submit" value="submit" />
+    </form>
+
+    <h2>My Friends</h2>
+
+    <table style="font-family: Arial, sans-serif;">
+        <tr>
+            <th>NAMA</th>
+            <th>NO HP</th>
+            <th>ALAMAT</th>
+        </tr>
+        <tr>
+            <td>Fahri</td>
+            <td>081432</td>
+            <td>Graha Raya</td>
+        </tr>
+        <tr>
+            <td>Vicky</td>
+            <td>085864</td>
+            <td>Kampung sawah dalam</td>
+        </tr>
+        <tr>
+            <td>Harlan</td>
+            <td>08643</td>
+            <td>Lengkong karya</td>
+        </tr>
+    </table>
+
+    <script>
+        document.getElementById('submit').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('LOGIN SUKSES');
+        });
+    </script>
+    
+</body>
+</html>
